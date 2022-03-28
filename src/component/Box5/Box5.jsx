@@ -7,6 +7,14 @@ export default function Box5() {
     <div className="box-container">
         <motion.div 
             className="box"
+            animate={{
+                scale: [1, 0.4, 0.4, 1, 1, 1],
+                borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+                rotate: [0, 0, 270, 270, 0]
+            }}
+            transition={{
+                duration: 2
+            }}
 
             >
 
