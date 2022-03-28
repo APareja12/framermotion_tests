@@ -9,7 +9,10 @@ export default function Box4() {
         visible: {
             x: 0,
             transition: {
-                delay: 0.5
+                delay: 0.5,
+                when: "beforeChildren",
+                staggerChildren: 0.5
+                
             }
         }
     }
@@ -22,9 +25,7 @@ export default function Box4() {
         visible: {
             x: 0,
             opacity: 1,
-            transition: {
-                delay: 1
-            }
+            
         }
     }
     
